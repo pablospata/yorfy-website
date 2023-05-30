@@ -1,0 +1,36 @@
+
+.button {
+    display: inline-block;
+    font-weight: 500;
+    background-color: var(--color-primario-blue);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    margin-top: 0.5rem;
+}
+
+.button-secundario {
+    display: inline-block;
+    font-weight: 500;
+    box-sizing: border-box;
+    border: 1px solid var(--color-texto-blanco);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    margin-top: 0.5rem;
+}
+
+.button:hover {
+    border: 1px solid var(--color-texto-parrafo);
+}
+
+.button-secundario:hover {
+    background-color: var(--color-primario-dark-blue);
+}
+
+header .button {
+    float: right;
+}
+
+.button:active,
+.button-secundario:active {
+    border: 2px solid var(--color-texto-parrafo);
+}

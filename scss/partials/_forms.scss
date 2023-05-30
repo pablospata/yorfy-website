@@ -1,0 +1,45 @@
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+}
+
+.formulario__boton {
+    display: flex;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--color-primario-blue);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    margin-top: 0.5rem;
+    color: var(--color-texto-blanco);
+    border: none;
+}
+
+.formulario__boton:hover {
+    border: 1px solid var(--color-texto-parrafo);
+}
+
+
+.formulario__campo {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-weight: 500;
+    box-sizing: border-box;
+    border: 1px solid var(--color-texto-blanco);
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+    margin-top: 0.5rem;
+}
+
+input[type="email"] {
+    color: var(--color-texto-blanco);
+}
+
+input[type="email"]::placeholder {
+    color: var(--color-texto-parrafo);
+}

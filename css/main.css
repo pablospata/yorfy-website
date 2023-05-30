@@ -1,3 +1,4 @@
+/* ============================== VARIABLES ============================== */
 :root {
   --color-primario-blue: #1E50FF;
   --color-primario-dark-blue: #081956;
@@ -9,6 +10,7 @@
   --color-acento-violeta: #AA00FF;
 }
 
+/* ============================== GLOBAL ============================== */
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +69,26 @@ header {
   padding: 2.5rem 4.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-texto-blanco);
+}
+
+a:hover {
+  color: var(--color-acento-cyan);
+}
+
+/* ============================== NAVBAR ============================== */
+.menu {
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+/* ============================== LOGOS ============================== */
 .logo {
   display: inline-block;
 }
@@ -100,24 +122,17 @@ header {
   margin-right: 2rem;
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-texto-blanco);
+.logo-iconGrande {
+  width: 80px;
+  height: 80px;
 }
 
-a:hover {
-  color: var(--color-acento-cyan);
+.logo-iconGrande p {
+  font-size: 3.6rem;
+  line-height: 80px;
 }
 
-.menu {
-  display: inline-block;
-}
-
-nav li {
-  display: inline-block;
-  padding: 1rem;
-}
-
+/* ============================== BUTTONS ============================== */
 .button {
   display: inline-block;
   font-weight: 500;
@@ -146,15 +161,90 @@ nav li {
   background-color: var(--color-primario-dark-blue);
 }
 
+header .button {
+  float: right;
+}
+
 .button:active,
 .button-secundario:active {
   border: 2px solid var(--color-texto-parrafo);
 }
 
-header .button {
-  float: right;
+/* ============================== FORMS ============================== */
+.newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  width: 90%;
 }
 
+.formulario__boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: var(--color-primario-blue);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--color-texto-blanco);
+  border: none;
+}
+
+.formulario__boton:hover {
+  border: 1px solid var(--color-texto-parrafo);
+}
+
+.formulario__campo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  font-weight: 500;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid var(--color-texto-blanco);
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+input[type=email] {
+  color: var(--color-texto-blanco);
+}
+
+input[type=email]::-webkit-input-placeholder {
+  color: var(--color-texto-parrafo);
+}
+
+input[type=email]::-moz-placeholder {
+  color: var(--color-texto-parrafo);
+}
+
+input[type=email]:-ms-input-placeholder {
+  color: var(--color-texto-parrafo);
+}
+
+input[type=email]::-ms-input-placeholder {
+  color: var(--color-texto-parrafo);
+}
+
+input[type=email]::placeholder {
+  color: var(--color-texto-parrafo);
+}
+
+/* ============================== SECTIONS ============================== */
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,16 +413,6 @@ img {
   text-align: center;
   gap: 1rem;
   margin: 0 2rem;
-}
-
-.logo-iconGrande {
-  width: 80px;
-  height: 80px;
-}
-
-.logo-iconGrande p {
-  font-size: 3.6rem;
-  line-height: 80px;
 }
 
 .imagenDestacada {
@@ -506,84 +586,23 @@ img {
   padding: 8rem 12rem;
 }
 
-.newsletter form {
+.zigzag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-  width: 90%;
 }
 
-.formulario__boton {
+.zigzag--reverse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: var(--color-primario-blue);
-  padding: 0.5rem 2rem;
-  border-radius: 0.5rem;
-  margin-top: 0.5rem;
-  color: var(--color-texto-blanco);
-  border: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-.formulario__boton:hover {
-  border: 1px solid var(--color-texto-parrafo);
-}
-
-.button:active,
-.button-secundario:active {
-  border: 2px solid var(--color-texto-parrafo);
-}
-
-.formulario__campo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: transparent;
-  font-weight: 500;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid var(--color-texto-blanco);
-  padding: 0.5rem 2rem;
-  border-radius: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-input[type=email] {
-  color: var(--color-texto-blanco);
-}
-
-input[type=email]::-webkit-input-placeholder {
-  color: var(--color-texto-parrafo);
-}
-
-input[type=email]::-moz-placeholder {
-  color: var(--color-texto-parrafo);
-}
-
-input[type=email]:-ms-input-placeholder {
-  color: var(--color-texto-parrafo);
-}
-
-input[type=email]::-ms-input-placeholder {
-  color: var(--color-texto-parrafo);
-}
-
-input[type=email]::placeholder {
-  color: var(--color-texto-parrafo);
-}
-
+/* ============================== FOOTER ============================== */
 footer {
   padding: 2.5rem 4.5rem;
   display: -webkit-box;
@@ -663,18 +682,6 @@ hr {
       justify-content: space-around;
 }
 
-.zigzag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.zigzag--reverse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
+/* =========================================================================== */
+/* ============================== MEDIA QUERIES ============================== */
+/* =========================================================================== */
