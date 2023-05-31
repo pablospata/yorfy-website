@@ -1,0 +1,60 @@
+@media screen and (max-width: 922px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5vw 3.5vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+        font-weight: 700;
+    }    
+
+    .contenido__texto {
+        padding-right: 2vw;
+    }
+
+    .contenido__milestones {
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+    }
+
+    .contenido,
+    .imagenCTA {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .imagenCTA__imagen {
+        margin-top: 5vw;
+        max-width: 80vw;
+    }
+
+    .imagenCTA__imagen img {
+        width: 96%;
+    }
+
+    .imagenCTA {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+    }
+
+
+    .collaboration__logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5vw;
+        margin: 2.5vw;
+    }
+
+    .ocultable {
+        display: none;
+    }
+
+}
