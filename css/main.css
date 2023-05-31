@@ -626,6 +626,14 @@ img {
           flex-direction: row-reverse;
 }
 
+.p404 {
+  padding: 0 15rem;
+}
+
+.p404 .button {
+  width: 100%;
+}
+
 /* ============================== FOOTER ============================== */
 footer {
   padding: 2.5rem 4.5rem;
