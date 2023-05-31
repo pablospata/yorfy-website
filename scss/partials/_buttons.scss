@@ -6,6 +6,7 @@
     padding: .5rem 2rem;
     border-radius: .5rem;
     margin-top: 0.5rem;
+    border: none;
 }
 
 .button-secundario {
@@ -20,6 +21,7 @@
 
 .button:hover {
     border: 1px solid var(--color-texto-parrafo);
+    background-color: var(--color-primario-blue);
 }
 
 .button-secundario:hover {

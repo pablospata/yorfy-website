@@ -65,17 +65,13 @@ p {
   color: var(--color-texto-parrafo);
 }
 
-header {
-  padding: 2.5rem 4.5rem;
-}
-
 a {
   text-decoration: none;
   color: var(--color-texto-blanco);
 }
 
-a:hover {
-  color: var(--color-acento-cyan);
+header {
+  padding: 1rem 0rem;
 }
 
 /* ============================== NAVBAR ============================== */
@@ -86,6 +82,10 @@ a:hover {
 nav li {
   display: inline-block;
   padding: 1rem;
+}
+
+.items-menu:hover {
+  color: var(--color-acento-cyan);
 }
 
 /* ============================== LOGOS ============================== */
@@ -140,6 +140,7 @@ nav li {
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
+  border: none;
 }
 
 .button-secundario {
@@ -155,6 +156,7 @@ nav li {
 
 .button:hover {
   border: 1px solid var(--color-texto-parrafo);
+  background-color: var(--color-primario-blue);
 }
 
 .button-secundario:hover {
@@ -680,6 +682,15 @@ hr {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+/* ============================== FOOTER ============================== */
+.blanco {
+  color: white;
+}
+
+.azul {
+  background-color: var(--color-primario-blue);
 }
 
 /* =========================================================================== */
