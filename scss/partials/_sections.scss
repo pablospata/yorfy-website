@@ -10,6 +10,14 @@
     flex-basis: 50%;
 }
 
+.imagenCTA__imagen {
+    max-width: 35rem;
+}
+
+.imagenCTA__imagen img {
+    width: 96%;
+}
+
 .contenido {
     display: flex;
     flex-direction: column;
@@ -113,8 +121,13 @@ img {
     margin: 0 2rem;
 }
 
-.imagenDestacada {
+
+.imagenDestacada {       
     box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.8);
+}
+
+.imagenDestacada img {
+    max-width: 25rem;
 }
 
 .variosNFT {
@@ -134,6 +147,10 @@ img {
 
 .cardNFT__nombre {
     display: flex;
+}
+
+.cardNFT img {
+    max-width: 20rem;
 }
 
 
@@ -174,6 +191,12 @@ img {
     height: 3.5rem;
     background-color: #D9D9D9;
     border-radius: 50%;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+    border: white solid 1px;
 }
 
 .usuarioData {
