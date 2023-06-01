@@ -9,7 +9,7 @@
         font-size: 4rem;
         line-height: 5rem;
         font-weight: 700;
-    }    
+    }
 
     .contenido__texto {
         padding-right: 2vw;
@@ -18,22 +18,11 @@
     .contenido__milestones {
         display: flex;
         justify-content: center;
-        gap: 3vw;
-    }
-
-    .contenido,
-    .imagenCTA {
-        flex-grow: 1;
-        flex-basis: 50%;
     }
 
     .imagenCTA__imagen {
         margin-top: 5vw;
         max-width: 80vw;
-    }
-
-    .imagenCTA__imagen img {
-        width: 96%;
     }
 
     .imagenCTA {
@@ -42,9 +31,67 @@
         justify-content: center;
         align-items: center;
         gap: 1vw;
+
     }
 
+    .imagenCTA__buttons {
+        width: 90%;
+        flex-direction: column;
+        padding-top: 10vw;
+    }
 
+    .imagenCTA__buttons div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destacado__titulo {
+        width: 85%;
+    }
+
+    .destacado__titulo p {
+        width: 110%;
+    }
+
+    .destacado__NFT {
+        flex-direction: column;
+
+    }
+
+    .destacado__NFT--colm1,
+    .destacado__NFT--colm2,
+    .destacado__NFT--colm3 {
+        max-width: 100%;
+    }
+
+    .destacado__NFT--colm2 {
+        order: -1;
+        width: 80vw;
+        margin-bottom: 10vw;
+    }
+
+    .variosNFT {
+        gap: 4vw;        
+    }
+
+    .cardNFT .cardNFT__nombre{
+        padding-left: 5vw;
+    }
+
+    .cardNFT img {
+        max-width: 80vw;
+    }
+
+    .community {
+        flex-direction: column;
+    }
+    
+    .community .button {
+        width: 90%;
+        margin-bottom: 4vw;
+    }
+    
     .collaboration__logos {
         display: flex;
         flex-direction: column;
@@ -55,6 +102,10 @@
 
     .ocultable {
         display: none;
+    }
+
+    .newsletter form {
+        flex-direction: column;
     }
 
 }
