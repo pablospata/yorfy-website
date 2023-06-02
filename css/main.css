@@ -134,22 +134,38 @@ nav li {
 
 /* ============================== BUTTONS ============================== */
 .button {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 500;
   background-color: var(--color-primario-blue);
-  padding: 0.5rem 2rem;
+  padding: 0.5vw 2vw;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
   border: none;
 }
 
 .button-secundario {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 500;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid var(--color-texto-blanco);
-  padding: 0.5rem 2rem;
+  padding: 0.5vw 2vw;
   border-radius: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -443,6 +459,19 @@ img {
   background-color: transparent;
 }
 
+.market {
+  padding-top: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .cardNFT {
   border: 1px solid #1E50FF;
   border-radius: 0.5rem;
@@ -646,6 +675,37 @@ img {
 
 .p404 .button {
   width: 100%;
+}
+
+.bg-hero {
+  height: 40vw;
+  width: 110vw;
+  left: -40px;
+  top: 128px;
+}
+
+.blur-violeta {
+  position: absolute;
+  width: 32vw;
+  height: 32vw;
+  left: -4vw;
+  top: 17vw;
+  background: var(--color-acento-violeta);
+  -webkit-filter: blur(12vw);
+          filter: blur(12vw);
+  z-index: -1;
+}
+
+.blur-azul {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  right: -10vw;
+  top: 12vw;
+  background: var(--color-primario-blue);
+  -webkit-filter: blur(12vw);
+          filter: blur(12vw);
+  z-index: -1;
 }
 
 /* ============================== FOOTER ============================== */

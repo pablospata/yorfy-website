@@ -1,8 +1,7 @@
-
 .hero {
-    display: flex;    
+    display: flex;
     padding: 2.5vw 4.5vw;
-   
+
 }
 
 
@@ -33,7 +32,7 @@
     flex-basis: 50%;
 }
 
-.imagenCTA__imagen {    
+.imagenCTA__imagen {
     max-width: 35vw;
 }
 
@@ -87,8 +86,8 @@ img {
     display: flex;
     flex-direction: column;
     padding: 2.5vw 4.5vw;
-    align-items: center; 
-    width: 100%;        
+    align-items: center;
+    width: 100%;
 }
 
 .destacado__titulo {
@@ -102,7 +101,7 @@ img {
 .destacado__NFT {
     background-color: var(--color-primario-dark-blue);
     border-radius: .5rem;
-    width: 100%;   
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,14 +117,14 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1vw;    
+    gap: 1vw;
     margin: 0 2.5%;
-    max-width: 30%;   
+    max-width: 30%;
 }
 
 
-.imagenDestacada {       
-    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.8);    
+.imagenDestacada {
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.8);
 }
 
 .destacado__NFT--colm2 {
@@ -138,6 +137,14 @@ img {
 
 .variosNFT {
     background-color: transparent;
+}
+
+.market {
+    padding-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
 }
 
 .cardNFT {
@@ -257,19 +264,19 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;    
+    text-align: center;
     gap: 1vw;
     background-color: var(--color-primario-dark-blue);
     border-radius: .5rem;
-    padding: 8vw 12vw;    
+    padding: 8vw 12vw;
 }
 
 .zigzag {
-    display: flex;    
+    display: flex;
 }
 
 .zigzag--reverse {
-    display: flex;    
+    display: flex;
     flex-direction: row-reverse;
 }
 
@@ -279,4 +286,41 @@ img {
 
 .p404 .button {
     width: 100%;
+}
+
+.bg-hero {
+    height: 40vw;
+    width: 110vw;
+    left: -40px;
+    top: 128px;
+}
+
+.blurs {
+    // display: flex;
+    // justify-content: space-between;
+}
+
+.blur-violeta {
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    left: -4vw;
+    top: 17vw;    
+
+    background: var(--color-acento-violeta);
+    filter: blur(12vw);
+    z-index: -1;
+}
+
+.blur-azul {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    right: -10vw;
+    top: 12vw;
+
+ 
+    background: var(--color-primario-blue);
+    filter: blur(12vw);
+    z-index: -1;
 }
