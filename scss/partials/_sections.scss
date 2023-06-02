@@ -295,17 +295,12 @@ img {
     top: 128px;
 }
 
-.blurs {
-    // display: flex;
-    // justify-content: space-between;
-}
-
 .blur-violeta {
     position: absolute;
     width: 32vw;
     height: 32vw;
     left: -5vw;
-    top: 17vw;    
+    top: 17vw;
 
     background: var(--color-acento-violeta);
     filter: blur(12vw);
@@ -319,8 +314,53 @@ img {
     right: -10vw;
     top: 12vw;
 
- 
+
     background: var(--color-primario-blue);
     filter: blur(12vw);
     z-index: -1;
+}
+
+.check-icon {
+    font-size: 1.5rem;
+    background: var(--color-acento-cyan);
+    color: var(--color-texto-blanco);
+    border-radius: 50%;
+    padding: 0.5vw 1vw;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;    
+    grid-gap: 1vw;
+    background-color: var(--color-primario-dark-blue);    
+    border-radius: .5rem;
+    padding: 1vw;
+    box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.8);
+}
+
+.card-image {
+    background-image: url('ruta/de/la/imagen.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.card-paragraph {
+    margin-bottom: 0;
 }
