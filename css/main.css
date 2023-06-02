@@ -688,7 +688,7 @@ img {
   position: absolute;
   width: 32vw;
   height: 32vw;
-  left: -4vw;
+  left: -5vw;
   top: 17vw;
   background: var(--color-acento-violeta);
   -webkit-filter: blur(12vw);
