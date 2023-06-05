@@ -797,6 +797,117 @@ img {
   margin-bottom: 0;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1vw 7.5vw;
+  gap: 5vw;
+}
+
+.about-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-1 .contenido__milestones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-1 .contenido__milestones1,
+.about-1 .contenido__milestones2,
+.about-1 .contenido__milestones3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 0 0 0;
+  border-right: 0;
+  border-bottom: 0.125rem solid var(--color-texto-blanco);
+}
+
+.about-1 .contenido__milestones3 {
+  border-bottom: 0;
+}
+
+.button, .button-secundario {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1vw 3vw 0 3vw;
+}
+
+.about-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.zigzag .button, header .button {
+  padding: 0.5vw 2vw;
+}
+
+.inversores img {
+  width: auto;
+  max-width: auto;
+}
+
+.inversores .cardNFT__nombre {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5vw;
+}
+
+.inversores p, .inversores h5 {
+  margin: 0;
+}
+
+.team-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5vw;
+}
+
+.team {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-container img {
+  width: auto;
+  max-width: auto;
+}
+
 /* ============================== FOOTER ============================== */
 footer {
   padding: 2.5vw 4.5vw;

@@ -272,7 +272,7 @@ img {
 
 .zigzag {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     padding: 1vw 4.5vw;
     align-items: center;
 }
@@ -294,7 +294,7 @@ img {
     display: block;
 }
 
-.zigzag--reverse {    
+.zigzag--reverse {
     flex-direction: row-reverse;
 }
 
@@ -353,9 +353,9 @@ img {
 
 .card-grid {
     display: grid;
-    grid-template-columns: 1fr 5fr;    
+    grid-template-columns: 1fr 5fr;
     grid-gap: 1vw;
-    background-color: var(--color-primario-dark-blue);    
+    background-color: var(--color-primario-dark-blue);
     border-radius: .5rem;
     padding: 1vw;
     box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.8);
@@ -366,7 +366,7 @@ img {
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .card-content {
@@ -381,4 +381,84 @@ img {
 
 .card-paragraph {
     margin-bottom: 0;
+}
+
+.about {
+    display: flex;    
+    padding: 1vw 7.5vw;
+    gap: 5vw;    
+}
+
+.about-1 {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-1 .contenido__milestones {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-1 .contenido__milestones1,
+.about-1 .contenido__milestones2,
+.about-1 .contenido__milestones3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    padding: 0 0 0 0;    
+    border-right: 0;
+    border-bottom: .125rem solid var(--color-texto-blanco);
+}
+
+.about-1 .contenido__milestones3 {
+    border-bottom: 0;
+}
+
+
+
+.button, .button-secundario {    
+    width: fit-content;
+    padding: 1vw 3vw 0 3vw;
+}
+
+.about-boton {
+    display: flex;
+    justify-content: center;
+}
+
+.zigzag .button, header .button {
+    padding: 0.5vw 2vw;
+}
+
+.inversores img {   
+    width: auto; 
+    max-width: auto;
+
+}
+
+.inversores .cardNFT__nombre {
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.inversores p, .inversores h5 {    
+    margin: 0;
+}
+
+.team-container {
+    flex-wrap: wrap;
+    gap: 1.5vw;
+}
+
+.team {
+    flex-direction: column;        
+}
+
+.team-container img {
+    width: auto; 
+    max-width: auto;
 }
