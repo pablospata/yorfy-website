@@ -109,3 +109,13 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .zigzag {
+        flex-direction: column;
+    }
+
+    .zigzag__imagen, .zigzag__texto {
+        flex: 1 1 100%;
+    }
+}

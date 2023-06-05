@@ -4,7 +4,6 @@
 
 }
 
-
 .contenido {
     display: flex;
     flex-direction: column;
@@ -273,10 +272,29 @@ img {
 
 .zigzag {
     display: flex;
+    flex-wrap: wrap;    
+    padding: 1vw 4.5vw;
+    align-items: center;
 }
 
-.zigzag--reverse {
-    display: flex;
+
+.zigzag__imagen {
+    flex: 1 1 40%;
+    padding: 1.5vw;
+}
+
+.zigzag__texto {
+    flex: 1 1 60%;
+    padding: 1.5vw;
+}
+
+.zigzag__imagen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.zigzag--reverse {    
     flex-direction: row-reverse;
 }
 
