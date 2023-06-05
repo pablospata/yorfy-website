@@ -239,28 +239,96 @@ header .button {
   margin-top: 0.5rem;
 }
 
-input[type=email] {
+input, textarea {
   color: var(--color-texto-blanco);
 }
 
-input[type=email]::-webkit-input-placeholder {
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: var(--color-texto-parrafo);
 }
 
-input[type=email]::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   color: var(--color-texto-parrafo);
 }
 
-input[type=email]:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: var(--color-texto-parrafo);
 }
 
-input[type=email]::-ms-input-placeholder {
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: var(--color-texto-parrafo);
 }
 
-input[type=email]::placeholder {
+input::placeholder, textarea::placeholder {
   color: var(--color-texto-parrafo);
+}
+
+.container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-areas: "div1 div2" "div3 div4" "div5 div5" "div6 div6" "div7 div7";
+  grid-column-gap: 1vw;
+  padding: 5vw;
+}
+
+.contact-form .div1 {
+  grid-area: div1;
+}
+
+.contact-form input {
+  color: aliceblue;
+}
+
+.contact-form .div2 {
+  grid-area: div2;
+}
+
+.contact-form .div3 {
+  grid-area: div3;
+}
+
+.contact-form .div4 {
+  grid-area: div4;
+}
+
+.contact-form .div5 {
+  grid-area: div5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form .div6 {
+  grid-area: div6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form .div7 {
+  grid-area: div7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* ============================== SECTIONS ============================== */
@@ -854,7 +922,8 @@ img {
   border-bottom: 0;
 }
 
-.button, .button-secundario {
+.button,
+.button-secundario {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -870,7 +939,8 @@ img {
           justify-content: center;
 }
 
-.zigzag .button, header .button {
+.zigzag .button,
+header .button {
   padding: 0.5vw 2vw;
 }
 
@@ -886,7 +956,8 @@ img {
   gap: 1.5vw;
 }
 
-.inversores p, .inversores h5 {
+.inversores p,
+.inversores h5 {
   margin: 0;
 }
 
@@ -906,6 +977,44 @@ img {
 .team-container img {
   width: auto;
   max-width: auto;
+}
+
+.redes-grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw 10vw;
+}
+
+.redes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+}
+
+.redes-grid img {
+  max-width: 7vw;
+}
+
+.redes-grid .card-grid {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-red {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2vw;
+  font-size: 5rem;
+  text-align: center;
 }
 
 /* ============================== FOOTER ============================== */
@@ -1133,6 +1242,17 @@ hr {
             flex-direction: column;
   }
 }
+@media (max-width: 955px) {
+  .redes-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .zigzag {
     -webkit-box-orient: vertical;
@@ -1140,9 +1260,13 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .zigzag__imagen, .zigzag__texto {
+  .zigzag__imagen,
+  .zigzag__texto {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+  .contact-form form {
+    grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6" "div7";
   }
 }

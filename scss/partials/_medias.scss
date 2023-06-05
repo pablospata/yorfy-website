@@ -72,10 +72,10 @@
     }
 
     .variosNFT {
-        gap: 4vw;        
+        gap: 4vw;
     }
 
-    .cardNFT .cardNFT__nombre{
+    .cardNFT .cardNFT__nombre {
         padding-left: 5vw;
     }
 
@@ -86,12 +86,12 @@
     .community {
         flex-direction: column;
     }
-    
+
     .community .button {
         width: 90%;
         margin-bottom: 4vw;
     }
-    
+
     .collaboration__logos {
         display: flex;
         flex-direction: column;
@@ -107,7 +107,13 @@
     .newsletter form {
         flex-direction: column;
     }
+}
 
+@media (max-width: 955px) {
+    .redes-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
@@ -115,7 +121,19 @@
         flex-direction: column;
     }
 
-    .zigzag__imagen, .zigzag__texto {
+    .zigzag__imagen,
+    .zigzag__texto {
         flex: 1 1 100%;
+    }
+
+    .contact-form form {
+        grid-template-areas:
+            "div1"
+            "div2"
+            "div3"
+            "div4"
+            "div5"
+            "div6"
+            "div7";
     }
 }

@@ -384,17 +384,17 @@ img {
 }
 
 .about {
-    display: flex;    
+    display: flex;
     padding: 1vw 7.5vw;
-    gap: 5vw;    
+    gap: 5vw;
 }
 
-.about-1 {    
+.about-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .about-1 .contenido__milestones {
@@ -407,9 +407,9 @@ img {
 .about-1 .contenido__milestones3 {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     text-align: center;
-    padding: 0 0 0 0;    
+    padding: 0 0 0 0;
     border-right: 0;
     border-bottom: .125rem solid var(--color-texto-blanco);
 }
@@ -420,7 +420,8 @@ img {
 
 
 
-.button, .button-secundario {    
+.button,
+.button-secundario {
     width: fit-content;
     padding: 1vw 3vw 0 3vw;
 }
@@ -430,12 +431,13 @@ img {
     justify-content: center;
 }
 
-.zigzag .button, header .button {
+.zigzag .button,
+header .button {
     padding: 0.5vw 2vw;
 }
 
-.inversores img {   
-    width: auto; 
+.inversores img {
+    width: auto;
     max-width: auto;
 
 }
@@ -445,7 +447,8 @@ img {
     gap: 1.5vw;
 }
 
-.inversores p, .inversores h5 {    
+.inversores p,
+.inversores h5 {
     margin: 0;
 }
 
@@ -455,10 +458,40 @@ img {
 }
 
 .team {
-    flex-direction: column;        
+    flex-direction: column;
 }
 
 .team-container img {
-    width: auto; 
+    width: auto;
     max-width: auto;
+}
+
+.redes-grid-container {
+    display: flex;
+    justify-content: center;
+    padding: 2vw 10vw;
+}
+
+.redes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.redes-grid img {    
+    max-width: 7vw;
+}
+
+.redes-grid .card-grid {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-red {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2vw;
+    font-size: 5rem;
+    text-align: center;
 }

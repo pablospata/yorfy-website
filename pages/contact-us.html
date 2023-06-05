@@ -53,9 +53,9 @@
                         <li class="nav-item"><a href="./about-us.html" class="nav-link px-2 blanco items-menu">
                                 About Us</a>
                         </li>
-                        <li class="nav-item"><a href="./contact-us.html"
-                                class="nav-link px-2 blanco items-menu"> <b>Contact Us</b></a>
-                        </li>                        
+                        <li class="nav-item"><a href="./contact-us.html" class="nav-link px-2 blanco items-menu">
+                                <b>Contact Us</b></a>
+                        </li>
                     </ul>
                 </div>
 
@@ -72,71 +72,87 @@
         <div class="blurs">
             <div class="blur-violeta"></div>
             <div class="blur-azul"></div>
-        </div>      
+        </div>
         <section class="destacado">
             <div class="destacado__titulo">
                 <h6>Contact Us</h6>
                 <h1>Wan't To Collaborate with Yorfy? Don't be Shy to Talk</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis voluptas dignissimos illum
-                    molestias facilis nobis quia praesentium reprehenderit ex.</p>
+                <p>We are always excited to explore potential collaborations and partnerships. If you have any
+                    inquiries, ideas, or opportunities you'd like to discuss with us, feel free to reach out.</p>
             </div>
         </section>
 
-        <section>
-            <div>
-                <div class="logo-red">
-                    <p>FB</p>
+        <section class="redes-grid-container ">
+            <div class="redes-grid">
+                <div class="card-grid">
+                    <img class="card-image" src="../assets/icons/facebook.png" alt="Logo de Facebook">
+                    <div class="card-content">
+                        <h4>Yorfy Collection</h4>
+                        <p>Facebook</p>
+                    </div>
                 </div>
-                <h4>Yorfy Collection</h4>
-                <p>Facebook</p>
-            </div>
-            <div>
-                <div class="logo-red">
-                    <p>IG</p>
+                <div class="card-grid">
+                    <img class="card-image" src="../assets/icons/instagram.png" alt="Logo de Instagram">
+                    <div class="card-content">
+                        <h4>@yorfycollection</h4>
+                        <p>Instagram</p>
+                    </div>
                 </div>
-                <h4>@yorfycollection</h4>
-                <p>Instagram</p>
-            </div>
 
-            <div>
-                <div class="logo-red">
-                    <p>LI</p>
+                <div class="card-grid">
+                    <img class="card-image" src="../assets/icons/linkedin.png" alt="Logo de Linkedin">
+                    <div class="card-content">
+                        <h4>Yorfy Studio</h4>
+                        <p>LinkedIn</p>
+                    </div>
                 </div>
-                <h4>Yorfy Studio</h4>
-                <p>LinkedIn</p>
-            </div>
 
-            <div>
-                <div class="logo-red">
-                    <p>YT</p>
+                <div class="card-grid">
+                    <img class="card-image" src="../assets/icons/youtube.png" alt="Logo de Yottube">
+                    <div class="card-content">
+                        <h4>Life at Yorfy</h4>
+                        <p>Youtube</p>
+                    </div>
                 </div>
-                <h4>Life at Yorfy</h4>
-                <p>Youtube</p>
             </div>
         </section>
+        
+        <div class="contact-form container-form">
+            <form action="#" method="POST">
+                <div class="div1">
+                    <label class="formulario" for="fname">First Name:</label><br>
+                    <input class="formulario__campo" type="text" id="fname" name="fname" placeholder="Type here" required><br>
+                </div>
 
-        <form action="#" method="POST">
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="Type here" required><br>
+                <div class="div2">
+                    <label for="lname">Last Name:</label><br>
+                    <input class="formulario__campo" type="text" id="lname" name="lname" placeholder="Type here" required><br>
 
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Type here" required><br>
+                </div>
+                <div class="div3">
+                    <label for="email">Email:</label><br>
+                    <input class="formulario__campo" type="email" id="email" name="email" placeholder="Type here" required><br>
+                </div>
+                <div class="div4">
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Type here" required><br>
+                    <label for="phone">Phone Number:</label><br>
+                    <input class="formulario__campo" type="tel" id="phone" name="phone" placeholder="Type here" required><br>
+                </div>
+                <div class="div5">
+                    <label for="subject">Subject:</label><br>
+                    <input class="formulario__campo" type="text" id="subject" name="subject" placeholder="Type here" required><br>
+                </div>
+                <div class="div6">
 
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="Type here" required><br>
 
-            <label for="subject">Subject:</label><br>
-            <input type="text" id="subject" name="subject" placeholder="Type here" required><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Type here" required></textarea><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
+                    <label for="message">Message:</label><br>
+                    <textarea class="formulario__campo" id="message" name="message" placeholder="Type here" required></textarea><br>
+                </div>
+                <div class="div7">
+                    <button class="formulario__boton" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -174,8 +190,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
