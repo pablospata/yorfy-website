@@ -1184,6 +1184,7 @@ hr {
     padding-top: 10vw;
   }
   .imagenCTA__buttons div {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1193,6 +1194,7 @@ hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 1rem;
   }
   .destacado__titulo {
     width: 85%;

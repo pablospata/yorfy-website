@@ -41,9 +41,11 @@
     }
 
     .imagenCTA__buttons div {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 1rem;
     }
 
     .destacado__titulo {
@@ -125,7 +127,7 @@
     .zigzag__texto {
         flex: 1 1 100%;
     }
-
+    
     .contact-form form {
         grid-template-areas:
             "div1"
